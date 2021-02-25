@@ -347,6 +347,28 @@ define Device/tplink_tl-wr841-v7
 endef
 TARGET_DEVICES += tplink_tl-wr841-v7
 
+define Device/tplink_tl-wr841-v8-16m
+  $(Device/tplink-16mlzma)
+  SOC := ar9341
+  DEVICE_MODEL := TL-WR841N/ND (16M | kopikonfig.com)
+  DEVICE_VARIANT := v8
+  TPLINK_HWID := 0x08410008
+  SUPPORTED_DEVICES += tl-wr841n-v8-16m
+endef
+TARGET_DEVICES += tplink_tl-wr841-v8-16m
+
+
+define Device/tplink_tl-wr841-v8-8m
+  $(Device/tplink-8mlzma)
+  SOC := ar9341
+  DEVICE_MODEL := TL-WR841N/ND (8M | kopikonfig.com)
+  DEVICE_VARIANT := v8
+  TPLINK_HWID := 0x08410008
+  SUPPORTED_DEVICES += tl-wr841n-v8-8m
+endef
+TARGET_DEVICES += tplink_tl-wr841-v8-8m
+
+
 define Device/tplink_tl-wr841-v8
   $(Device/tplink-4mlzma)
   SOC := ar9341
